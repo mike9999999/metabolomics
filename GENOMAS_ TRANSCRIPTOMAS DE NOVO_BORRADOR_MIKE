@@ -15,6 +15,16 @@ Tipo de tecnología.
 Tipo de factor o muestra.
 Características de la muestra.
 
+Coverage Equation
+The Lander/Waterman equation is a method for computing coverage1.
+The general equation is:
+C = LN / G
+• C stands for coverage
+• G is the haploid genome length
+• L is the read length
+• N is the number of reads
+
+
 
 ##ENSAMBLADO 
 
