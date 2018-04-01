@@ -15,6 +15,7 @@ Tipo de tecnología.
 Tipo de factor o muestra.
 Características de la muestra.
 
+
 Coverage Equation
 The Lander/Waterman equation is a method for computing coverage1.
 The general equation is:
@@ -24,6 +25,8 @@ C = LN / G
 • L is the read length
 • N is the number of reads
 
+![](genome work flow, jang, 2018.png)
+![](transcriptome, geniza,2017.png)
 
 
 ##ENSAMBLADO 
@@ -32,7 +35,8 @@ Ensamblado de novo de genóma
 
 Consiste en a) Designación del experimento y sobrelapamiento de reads y conformación-ensamblado de contings. b) generación de scafoldings. c) Rellenado de huecos entre scafolds. d) Generación de 
 borradores parciales del genóma en cuestión.
-![](conocimiento_total.png)
+
+![](K MERS,JANG 2018.png)
 
 Ensamblado de novo de transcriptoma
 
@@ -55,6 +59,7 @@ BinPacker ( 2016): este software contruye transcritos, incorpora información de
 
 Nota: Todos lo software anteriores utilizan entre sus herramientas, el algoritmo Bruijn Graph, que consiste en el traslape de reads para contruir transcritos o cadenas.
 
+![](![](trimomatinc,Grabherr,2011.png)
 
 
 Ejemplo de triniti.
@@ -63,16 +68,18 @@ TRINITY
 http://evomics.org/learning/genomics/trinity/
 https://github.com/Jaiswal-lab/Transcriptome_Assembly_Scripts.git
 
+```
 Trinity --seqType fq --left <left_reads> --right <right_reads> --output test-trinity-cotton 
 ## where --seqType is read type "fq" fastq or "fa" fasta
 ## where --left is name and location of left reads
 ## where --right is name and location of right reads
 ## where --output is the name and location output
-
+```
 Ejemplo: Basic Trinity usage is as follows:
 
+`
 Trinity.pl --seqType (fq for fastq or fa for fast) --left ~/path/to/reads_1.fq --right ~/path/to/reads_2.fq (or --single for single reads) --CPU 4 --bflyHeapSpace 10G --output ~/path/to/output_dir
-
+`
 NOTE: It is recommended to use fully specified paths for sequence files with Trinity.
 
 
