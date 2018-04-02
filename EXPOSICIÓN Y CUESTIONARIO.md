@@ -37,7 +37,7 @@ C = LN / G
 
 
 
-## ENSAMBLADO *de novo**
+## ENSAMBLADO *de novo*
 
 
 Consiste en: 
