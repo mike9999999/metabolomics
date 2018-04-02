@@ -40,19 +40,21 @@ borradores parciales del genóma en cuestión.
 
 ![](kmer.png)
 
-ensamblado
+**Ensamblado
 
 ![](ENSAMBLE.gif)
 
-Genoma de novo
+**Genoma de novo
 
 ![](genoma.png)
 
 
 **Ensamblado de novo de transcriptoma
 
-Este proceso consiste en  a) Designación experimental, generación de bibliotecas y secuenciación. b) análisis de control de calidad y filtrado de reads. c) Ensamblado de
-novo mediante software como: velver, Oases, SPAdes, Trinity o BinPacker. Estos software generalmente utiliza para generar el ensablado los algoritmos o métodos:
+Este proceso consiste en:
+a) Designación experimental, generación de bibliotecas y secuenciación. 
+b) análisis de control de calidad y filtrado de reads. 
+c) Ensamblado de *novo* mediante software como: velver, Oases, SPAdes, Trinity o BinPacker. Estos software generalmente utiliza para generar el ensablado los algoritmos o métodos:
 
 **OLC: Overlap-Layout-Consensus assembly
 **DBG: De Bruijn graph assembly
@@ -74,7 +76,7 @@ Además triniti brinda  métricas de calidad de ensamblado y ensayos. En particu
 
 **Nota**: Todos lo software anteriores utilizan entre sus herramientas, el algoritmo Bruijn Graph, que consiste en el traslape de reads para contruir transcritos o cadenas.
 
-**Paqueteria de Triniti (2013)
+**Paqueteria de Triniti (2013)**
 
 ![](trimomatinc,Grabherr,2011.png)
 
