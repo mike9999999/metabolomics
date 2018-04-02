@@ -1,5 +1,5 @@
 
-##INTRODUCCIÓN##
+# INTRODUCCIÓN
 
 El ensablado de novo para genomas y transcriptomas consiste en la conformación de secuencias coherentes a partir de los
 datos del secuenciador cuando no existe un genoma de referencia con el cual comparar los datos de la secuenciación. 
@@ -40,6 +40,10 @@ borradores parciales del genóma en cuestión.
 K mers
 
 ![](kmer.png)
+
+ensamblado
+
+![](ENSAMBLE.gif)
 
 Genoma de novo
 
@@ -89,16 +93,18 @@ Trinity --seqType fq --left <left_reads> --right <right_reads> --output test-tri
 ## where --right is name and location of right reads
 ## where --output is the name and location output
 ```
+
 Ejemplo: Basic Trinity usage is as follows:
 
 `
 Trinity.pl --seqType (fq for fastq or fa for fast) --left ~/path/to/reads_1.fq --right ~/path/to/reads_2.fq (or --single for single reads) --CPU 4 --bflyHeapSpace 10G --output ~/path/to/output_dir
 `
+
 NOTE: It is recommended to use fully specified paths for sequence files with Trinity.
 
 
 
-##EVALUACIÓN DE ENSAMBLADO
+## EVALUACIÓN DE ENSAMBLADO
 
 El análisis posterior es la evaluación del ensablado donde se analizan métricas como N50 o exN50.
 
@@ -109,14 +115,15 @@ Transrate
 CD-HIT-EST
 
 
-##PERSPECTIVAS
+## PERSPECTIVAS
+
 
 Disminición en la tasa de errores (Pacbio).
 Dsitinguir contaminación.
 disminución de costo para un mayor estudio de organismos específicos.
 
 
-##cuestionario
+## cuestionario
 
 1.¿Cuáles son las principales variantes del método de laboratorio para generar mis datos y cuándo es más útil cada una?
 
