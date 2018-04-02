@@ -39,7 +39,8 @@ Consiste en a) Designación del experimento y sobrelapamiento de reads y conform
 borradores parciales del genóma en cuestión.
 
 
-![](metabolomics/K MERS,JANG 2018.png)
+
+![](K MERS,JANG 2018.png)
 
 
 
