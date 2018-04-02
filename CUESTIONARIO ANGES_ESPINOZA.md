@@ -1,5 +1,5 @@
 
-##INTRODUCCIÓN
+##INTRODUCCIÓN##
 
 El ensablado de novo para genomas y transcriptomas consiste en la conformación de secuencias coherentes a partir de los
 datos del secuenciador cuando no existe un genoma de referencia con el cual comparar los datos de la secuenciación. 
@@ -26,7 +26,7 @@ C = LN / G
 
 
 
-
+![](experimetal.png.png)
 
 
 
@@ -37,10 +37,11 @@ Ensamblado de novo de genóma
 Consiste en a) Designación del experimento y sobrelapamiento de reads y conformación-ensamblado de contings. b) generación de scafoldings. c) Rellenado de huecos entre scafolds. d) Generación de 
 borradores parciales del genóma en cuestión.
 
-
+K mers
 
 ![](kmer.png)
 
+Genoma de novo
 
 ![](genoma.png)
 
@@ -52,6 +53,10 @@ novo mediante software como: velver, Oases, SPAdes, Trinity o BinPacker. Estos s
 
 OLC: Overlap-Layout-Consensus assembly
 DBG: De Bruijn graph assembly
+
+
+![](transcriptome.png)
+
 
 Para el ensamblado de transcriptoma de novo sin genoma de referencia existe una diversidad amplia en software:
 
@@ -66,6 +71,7 @@ BinPacker ( 2016): este software contruye transcritos, incorpora información de
 
 Nota: Todos lo software anteriores utilizan entre sus herramientas, el algoritmo Bruijn Graph, que consiste en el traslape de reads para contruir transcritos o cadenas.
 
+Paqueteria de Triniti (2013)
 
 ![](trimomatinc,Grabherr,2011.png)
 
