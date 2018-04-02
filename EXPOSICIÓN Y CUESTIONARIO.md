@@ -1,7 +1,7 @@
-# ENSAMBLADO *DE NOVO* GENOMAS Y TRANSCRIPTOMAS DE NOVO
+# ENSAMBLADO DE TRANSCRIPTOMA *DE NOVO*
 ## INTRODUCCIÓN
 
-El ensablado de novo para genomas y transcriptomas consiste en la conformación de secuencias coherentes a partir de los
+El ensablado *de novo* para transcriptomas consiste en la conformación de secuencias coherentes a partir de los
 datos del secuenciador cuando no existe un genoma de referencia con el cual comparar los datos de la secuenciación. 
 
 En particular la secuenciación de genóma se centra en un estudio amplio del DNA en un organismo para conocer mutaciones, SNP´s, allelos, 
@@ -15,13 +15,20 @@ Tipo de factor o muestra.
 Características de la muestra.
 
 
-**Coverage Equation
+**Coverage Equation**
+
 The Lander/Waterman equation is a method for computing coverage1.
+
 The general equation is:
+
 C = LN / G
+
 • C stands for coverage
+
 • G is the haploid genome length
+
 • L is the read length
+
 • N is the number of reads
 
 
@@ -33,8 +40,16 @@ C = LN / G
 ## ENSAMBLADO de *novo
 
 
-Consiste en a) Designación del experimento y sobrelapamiento de reads y conformación-ensamblado de contings. b) generación de scafoldings. c) Rellenado de huecos entre scafolds. d) Generación de 
-borradores parciales del genóma en cuestión.
+Consiste en: 
+
+a) Designación del experimento y sobrelapamiento de reads y conformación-ensamblado de contings. 
+
+b) generación de scafoldings. 
+
+c) Rellenado de huecos entre scafolds. 
+
+d) Generación de borradores parciales del genóma en cuestión.
+
 
 **K mers
 
@@ -44,20 +59,21 @@ borradores parciales del genóma en cuestión.
 
 ![](ENSAMBLE.gif)
 
-**Genoma de novo
-
-![](genoma.png)
-
 
 **Ensamblado de novo de transcriptoma
 
 Este proceso consiste en:
+
 a) Designación experimental, generación de bibliotecas y secuenciación. 
-b) análisis de control de calidad y filtrado de reads. 
+
+
+b) Análisis de control de calidad y filtrado de reads. 
+
 c) Ensamblado de *novo* mediante software como: velver, Oases, SPAdes, Trinity o BinPacker. Estos software generalmente utiliza para generar el ensablado los algoritmos o métodos:
 
-**OLC: Overlap-Layout-Consensus assembly
-**DBG: De Bruijn graph assembly
+**OLC: Overlap-Layout-Consensus assembly**
+
+**DBG: De Bruijn graph assembly**
 
 
 ![](transcriptome.png)
