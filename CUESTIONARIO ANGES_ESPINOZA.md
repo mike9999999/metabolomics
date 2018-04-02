@@ -39,7 +39,8 @@ Consiste en a) Designación del experimento y sobrelapamiento de reads y conform
 borradores parciales del genóma en cuestión.
 
 
-![](K MERS,JANG 2018.png)
+![](metabolomics/K MERS,JANG 2018.png)
+
 
 
 Ensamblado de novo de transcriptoma
@@ -101,12 +102,14 @@ CD-HIT-EST
 
 
 ##PERSPECTIVAS
+
 Disminición en la tasa de errores (Pacbio).
 Dsitinguir contaminación.
 disminución de costo para un mayor estudio de organismos específicos.
 
 
 ##cuestionario
+
 1.¿Cuáles son las principales variantes del método de laboratorio para generar mis datos y cuándo es más útil cada una?
 
 Para genoma de novo y transcriptomas las principales variantes del experimento de secuenciación es la generación de reads Pair-ends y Single-ends. Los reads Pair-ends es una estrategia  que conserva información de ambos sentidos de un transcrito, y se recomienda en uns secuenciación cuando no existe genóma de referencia.
