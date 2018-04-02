@@ -24,7 +24,10 @@ C = LN / G
 • L is the read length
 • N is the number of reads
 
+
 ![](genome work flow, jang, 2018.png)
+
+
 ![](transcriptome, geniza,2017.png)
 
 
@@ -35,7 +38,9 @@ Ensamblado de novo de genóma
 Consiste en a) Designación del experimento y sobrelapamiento de reads y conformación-ensamblado de contings. b) generación de scafoldings. c) Rellenado de huecos entre scafolds. d) Generación de 
 borradores parciales del genóma en cuestión.
 
+
 ![](K MERS,JANG 2018.png)
+
 
 Ensamblado de novo de transcriptoma
 
@@ -58,7 +63,8 @@ BinPacker ( 2016): este software contruye transcritos, incorpora información de
 
 Nota: Todos lo software anteriores utilizan entre sus herramientas, el algoritmo Bruijn Graph, que consiste en el traslape de reads para contruir transcritos o cadenas.
 
-![](![](trimomatinc,Grabherr,2011.png)
+
+![](trimomatinc,Grabherr,2011.png)
 
 
 Ejemplo de triniti.
