@@ -37,7 +37,7 @@ C = LN / G
 
 
 
-## ENSAMBLADO de *novo
+## ENSAMBLADO *de novo**
 
 
 Consiste en: 
@@ -51,16 +51,16 @@ c) Rellenado de huecos entre scafolds.
 d) Generación de borradores parciales del genóma en cuestión.
 
 
-**K mers
+**K mers**
 
 ![](kmer.png)
 
-**Ensamblado
+**Ensamblado**
 
 ![](ENSAMBLE.gif)
 
 
-**Ensamblado de novo de transcriptoma
+**Ensamblado de novo de transcriptoma**
 
 Este proceso consiste en:
 
@@ -125,50 +125,59 @@ Trinity.pl --seqType (fq for fastq or fa for fast) --left ~/path/to/reads_1.fq -
 
 El análisis posterior es la evaluación del ensablado donde se analizan métricas como N50 o exN50.
 
-softwares:
+Software para evaluación de ensamblado:
+
+
 BLAST
+
 rnaQUAST
+
 Transrate
+
 CD-HIT-EST
 
 
 ## PERSPECTIVAS
 
 
-Disminición en la tasa de errores (Pacbio).
-Dsitinguir contaminación.
-disminución de costo para un mayor estudio de organismos específicos.
+**Disminición en la tasa de errores (Pacbio).**
+
+**Dsitinguir contaminación.**
+
+**Disminución de costo para un mayor estudio de organismos específicos.**
 
 
-## cuestionario
+## CUESTIONARIO
 
 1.¿Cuáles son las principales variantes del método de laboratorio para generar mis datos y cuándo es más útil cada una?
 
-Para genoma de novo y transcriptomas las principales variantes del experimento de secuenciación es la generación de reads Pair-ends y Single-ends. Los reads Pair-ends es una estrategia  que conserva información de ambos sentidos de un transcrito, y se recomienda en uns secuenciación cuando no existe genóma de referencia.
- Por otro lado, la estratégia de Singel-end brinda una relación costo-efectiva y se recomienda en la secuenciación donde existe genoma de refeencia o bien genomas de organismos emparentados.
-Existen otros factores que varian en el estudio de rna-seq de novo, número de replicados biológicos no menor a 3 y la inclusión de controles. Asi como el uso de ontologías específicas.
+Para transcriptomas de novo las principales variantes del experimento de secuenciación es la generación de reads Pair-ends y Single-ends. Los reads Pair-ends es una estrategia que conserva información de ambos sentidos de un transcrito, se recomienda cuando no existe genoma de referencia. Por otro lado, la estratégia de Single-end brinda una relación costo-efectiva ideal en la secuenciación con genoma de referencia o bien genomas de organismos emparentados. Existen otros factores que varian en el estudio de RNA-seq de novo, número de replicados biológicos no menor a 3 y la inclusión de controles. Así como el uso de ontologías específicas.
 
 2.¿Qué limitantes y posibles fuentes de error puede presentar este método (en el laboratorio o la bioinformática)? ¿Qué puede hacerse para amortiguarlos?
- 
-Bioinformática:En el caso de genoma de novo y transcriptoma el número de reads aumenta para mayor exactitud de la secuenciación. Aunque el aumento de reads pair-end conllevan a una demanda de alamcenamiento bioinformático mayor.Por otro lado, la ausencia de muestras control limitan un análisis de contraste de expresión. Solución, contar con repositorios e infraestructura adecuada.
-Laboratorio: Muestras con rna de poca calidad debido a la naturaleza del tejido. Solución, mejorar el proceso d extracción de rna ya que eso genera un aumento de falsos positivos y perdida de información.  
+
+Bioinformática:En el caso de transcriptoma de novo al aumentar el número de *reads* la exactitud de la secuenciación será mayor. Aunque el aumento de *reads pair-end* conllevan a una demanda de almacenamiento bioinformático mayor.Por otro lado, la ausencia de muestras control limitan un análisis de contraste de expresión. Solución, contar con repositorios e infraestructura adecuada. 
 
 
 3.¿El muestreo requiere algún diseño específico? Por ejemplo, si se quiere secuenciar un genoma de novo ¿qué individuo sería ideal?
+ Para un estudio de transcriptoma de novo podamos evaluar transcritos y su expresión, es necesario tener muestras de dos grupos diferentes, preferentemente tres individuos por condición. 
+El transcriptoma de una célula se puede modular en lapsos relativamente cortos de tiempo (minutos, horas, días). Por tal motivo el transcriptoma es altamente dinámico y es diferente en cada tipo celular. Así mismo, el momento celular o momento metabólico lo va a influir. Dada su dinámica de cambio La extracción de RNA para comparar ṕoblaciones o condiciones particulares debe realizarse en el tejido de interés.
+Un ejemplo de colecta de mRNA realizada para ensamblaje del transcriptoma lo encontramos en Ibarra-Laclette et al. (2015) en Lophophora williamsii (peyote), quienes realizaron la colecta a partir de las raíces y botones de las plantas colectadas. Por otro lado, Grabherr et al (2011), extrajeron el mRNA a partir de cultivos celulares de levadura y de celulas dendríticas lisadas de ratón para el ensamblaje del transcriptoma de ambas especies.
 
-Si trabajo con trascriptomas, ¿cómo afecta el tejido, la edad, las condiciones, etc. mi muestreo?
-El individuo o individuos ideales serian aquellos que representen un una linea genómica más conservada; es decir: que pertenesca a un grupo más ancestral. Lo cual puede generar datos de referencia genómica para estudios futuros com SNP´s o mutaciónes de diferentes tipos.
-El transcriptomá es el conjunto de diferentes tipos funcionales de moléculas de RNA. Generalmente se asocia el RNA con la expreaión genómica por que es una transcripción del DNA en una célula. Ya que la transcripción se modula por diferentes formas asi también el transcriptoma, es decir; el transcriptoma de una célula se puede moduar en lapsos relativamente cortos de tiempo (minutos, horas, días). Por tla motivo el transcriptoma es altamente dinámico y es diferente en cada tipo celular. A sí mismo, el momento celular o momento metabólico va a influir en transcriptoma.
-Dada la dinámica de cambio del transcriptoma, una estratégia de preservación del RNA durante una toma de muestra, es la congelación inmediata de la muestra, para preservar el transcriptoma en dicho momento.
-4.Menciona al menos dos softwares principales que se utilicen para realizar la parte medular de los análisis bioinformáticos de este tipo de análisis (e.g. si es ensamblado de novo con qué se ensambla, no con qué se hace el pre-procesamiento) y cuáles son los pros y contras de cada uno.
-Para el ensamblado de transcriptoma de novo sin genoma de referencia existe una diversidad amplia en software. 
+4.Menciona al menos dos softwares principales que se utilicen para realizar la parte medular de los análisis bioinformáticos de este tipo de análisis (e.g. si es ensamblado de novo con qué se ensambla, no con qué se hace el pre-procesamiento) y cuáles son los pros y contras de cada uno. 
+Para el ensamblado de transcriptoma de novo sin genoma de referencia existe una diversidad amplia en software.
 
-Velvet/Oases (2008): Ambos software generan ensablado de novo de transcriptoma a partir de pair-end cortos. También, generan analisis de scplicing, sin embargo para realizar analisis adicionales, requieren de actualizaciones.
-
+Velvet/Oases (2008): Ambos software generan ensamblado de novo de transcriptoma a partir de pair-end cortos. También, generan análisis de splicing, sin embargo para realizar analisis adicionales, requieren de actualizaciones.
 SPAdes (2012): este software genera ensamblado de novo en una amplia variedad de especies y tamaños de transcriptomas, además puede generar análisis de expresión.
+ Sin embargo, los paquetes con los que se han obtenido mejores resultados al realizar los ensamblados son:
+1)BinPacker (2016): este software construye transcritos, incorpora información de la covertura y genera análisis de splicing. En específico este sistema profundiza en los análisis de splicing y su ensamblado. Sinembargo tiene como desventaja que no es un software libre
 
-Triniti: este softeare fué liberado en 2013 y los análisis de ensamblado son realizados mediante la utilización de 3 paquetes que se ejecutan de manera independiente. Ichworm, admite los reads del experimento de secuenciación en transcritos. Chrysalis, ensambla los transcritos y genera gráficas Buijin, mientras que Butterfly analiza los gráficos y genera transcritos completos.
-Además triniti brinda  métricas de calidad de ensamblado y ensayos. En particular para transcritptoma exmina con la metrica de “exN50” (top de transcritos que representan el 50% del transcriptoma).
 
-BinPacker ( 2016): este software contruye transcritos, incorpora información de la covertura y genera análisis de splicing. En específico este sistema profundiza en los análisis de splicing y su ensamblado.
+2)Trans-ABySS Es un programa capaz de analizar hasta 7.4 Gb en lecturas de 50 pares de bases pairedend en poco tiempo y sin consumir mucha memoria. Fusiona todos los contig producidos por el programa ABySS en un conjunto de fragmentos transcritos no redundantes. Trans-ABySS puede predecir sitios de poliadelinación, identificar fusión genica y calcular la expresión del gen. Produce en promedio más isoformas por gen , el método de reconstrucción por múltiples ensamblajes permite reconstruir varios fragmentos. Sin embargo, es poco eficiente con datos single end, produciendo fragmentos de secuencias de transcrito con colas de poly A desde 35pb. 
+
+3)Trinity ES un ensamblador de tres modulos: 1)Larva, admite las lecturas de la secuenciación en los transcritos, 2)Crisalida, realiza el empalme de parálogos y genera gráficas de Buijin y 3)Mariposa,analiza los gráficos y genera la enumeración de transcritos completos. Esta modularidad otorga una mayor flexibilidad para extender los pasos, permitiendo incluso remplazar algún módulo por otro más eficiente. Este software sobre otros es que tiene una mejor complementatización y la contiguedad más grande. Produce poca cantidad de isoformas. Tiene como desventaja que utiliza mucha memoria y el proceso lo realiza en mucho tiempo.  Ambos programas han identificado estructuras conocidas, nuevas y expresiones alternas en transcritos. 
+Además trinity brinda métricas de calidad de ensamblado y ensayos. En particular para transcritptoma examina con la metrica de “exN50” (top de transcritos que representan el 50% del transcriptoma).
 Nota: Todos lo software anteriores utilizan entre sus herramientas, el algoritmo Bruijn Graph, que consiste en el traslape de reads para contruir transcritos o cadenas.
+Todos los programas son poco sensibles con secuenciaciones de baja profundidad. Con el aumento en la cobertura de las secuencias estos softwares de novo se consideran más eficientes que los ensambladores guiados por un genoma.
+
+ http://www.nature.com.pbidi.unam.mx:8080/articles/nmeth.1517.pdf
+ http://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC3571712&blobtype=pdf
