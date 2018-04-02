@@ -1,5 +1,5 @@
-
-# INTRODUCCIÓN
+# ENSAMBLADO *DE NOVO* GENOMAS Y TRANSCRIPTOMAS DE NOVO
+## INTRODUCCIÓN
 
 El ensablado de novo para genomas y transcriptomas consiste en la conformación de secuencias coherentes a partir de los
 datos del secuenciador cuando no existe un genoma de referencia con el cual comparar los datos de la secuenciación. 
