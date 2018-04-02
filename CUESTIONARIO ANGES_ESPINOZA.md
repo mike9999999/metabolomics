@@ -15,7 +15,7 @@ Tipo de factor o muestra.
 Características de la muestra.
 
 
-Coverage Equation
+**Coverage Equation
 The Lander/Waterman equation is a method for computing coverage1.
 The general equation is:
 C = LN / G
@@ -30,14 +30,13 @@ C = LN / G
 
 
 
-##ENSAMBLADO 
+## ENSAMBLADO de *novo
 
-Ensamblado de novo de genóma
 
 Consiste en a) Designación del experimento y sobrelapamiento de reads y conformación-ensamblado de contings. b) generación de scafoldings. c) Rellenado de huecos entre scafolds. d) Generación de 
 borradores parciales del genóma en cuestión.
 
-K mers
+**K mers
 
 ![](kmer.png)
 
@@ -50,13 +49,13 @@ Genoma de novo
 ![](genoma.png)
 
 
-Ensamblado de novo de transcriptoma
+**Ensamblado de novo de transcriptoma
 
 Este proceso consiste en  a) Designación experimental, generación de bibliotecas y secuenciación. b) análisis de control de calidad y filtrado de reads. c) Ensamblado de
 novo mediante software como: velver, Oases, SPAdes, Trinity o BinPacker. Estos software generalmente utiliza para generar el ensablado los algoritmos o métodos:
 
-OLC: Overlap-Layout-Consensus assembly
-DBG: De Bruijn graph assembly
+**OLC: Overlap-Layout-Consensus assembly
+**DBG: De Bruijn graph assembly
 
 
 ![](transcriptome.png)
@@ -64,18 +63,18 @@ DBG: De Bruijn graph assembly
 
 Para el ensamblado de transcriptoma de novo sin genoma de referencia existe una diversidad amplia en software:
 
-Velvet/Oases (2008): Ambos software generan ensablado de novo de transcriptoma a partir de pair-end cortos. También, generan analisis de scplicing, sin embargo para realizar analisis adicionales, requieren de actualizaciones.
+**Velvet/Oases** (2008): Ambos software generan ensablado de novo de transcriptoma a partir de pair-end cortos. También, generan analisis de scplicing, sin embargo para realizar analisis adicionales, requieren de actualizaciones.
 
-SPAdes (2012): este software genera ensamblado de novo en una amplia variedad de especies y tamaños de transcriptomas, además puede generar análisis de expresión.
+**SPAdes** (2012): este software genera ensamblado de novo en una amplia variedad de especies y tamaños de transcriptomas, además puede generar análisis de expresión.
 
-Triniti: este softeare fué liberado en 2013 y los análisis de ensamblado son realizados mediante la utilización de 3 paquetes que se ejecutan de manera independiente. Ichworm, admite los reads del experimento de secuenciación en transcritos. Chrysalis, ensambla los transcritos y genera gráficas Buijin, mientras que Butterfly analiza los gráficos y genera transcritos completos.
+**Triniti** : este softeare fué liberado en 2013 y los análisis de ensamblado son realizados mediante la utilización de 3 paquetes que se ejecutan de manera independiente. Ichworm, admite los reads del experimento de secuenciación en transcritos. Chrysalis, ensambla los transcritos y genera gráficas Buijin, mientras que Butterfly analiza los gráficos y genera transcritos completos.
 Además triniti brinda  métricas de calidad de ensamblado y ensayos. En particular para transcritptoma exmina con la metrica de “exN50” (top de transcritos que representan el 50% del transcriptoma).
 
-BinPacker ( 2016): este software contruye transcritos, incorpora información de la covertura y genera análisis de splicing. En específico este sistema profundiza en los análisis de splicing y su ensamblado.
+**BinPacker** ( 2016): este software contruye transcritos, incorpora información de la covertura y genera análisis de splicing. En específico este sistema profundiza en los análisis de splicing y su ensamblado.
 
-Nota: Todos lo software anteriores utilizan entre sus herramientas, el algoritmo Bruijn Graph, que consiste en el traslape de reads para contruir transcritos o cadenas.
+**Nota**: Todos lo software anteriores utilizan entre sus herramientas, el algoritmo Bruijn Graph, que consiste en el traslape de reads para contruir transcritos o cadenas.
 
-Paqueteria de Triniti (2013)
+**Paqueteria de Triniti (2013)
 
 ![](trimomatinc,Grabherr,2011.png)
 
@@ -100,7 +99,7 @@ Ejemplo: Basic Trinity usage is as follows:
 Trinity.pl --seqType (fq for fastq or fa for fast) --left ~/path/to/reads_1.fq --right ~/path/to/reads_2.fq (or --single for single reads) --CPU 4 --bflyHeapSpace 10G --output ~/path/to/output_dir
 `
 
-NOTE: It is recommended to use fully specified paths for sequence files with Trinity.
+**NOTE**: It is recommended to use fully specified paths for sequence files with Trinity.
 
 
 
