@@ -28,7 +28,8 @@ C = LN / G
 ![](genome work flow, jang, 2018.png)
 
 
-![](transcriptome, geniza,2017.png)
+![](https://github.com/mike9999999/metabolomics/commit/9094c708faee68b2793bc78bb23c3b5eae487ecb#diff-a18155775d83b474c7de6822e130a2a6)
+
 
 
 ##ENSAMBLADO 
