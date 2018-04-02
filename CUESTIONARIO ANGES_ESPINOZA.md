@@ -25,7 +25,7 @@ C = LN / G
 • N is the number of reads
 
 
-![](genoma.png)
+
 
 
 
@@ -39,8 +39,10 @@ borradores parciales del genóma en cuestión.
 
 
 
-![](K MERS,JANG 2018.png)
+![](kmer.png)
 
+
+![](genoma.png)
 
 
 Ensamblado de novo de transcriptoma
