@@ -54,8 +54,6 @@ C = LN / G
 
 
 
-![](experimetal.png.png)
-
 
 
 ## ENSAMBLADO *de novo*
@@ -72,13 +70,22 @@ c) Rellenado de huecos entre scafolds.
 d) Generación de borradores parciales del genóma en cuestión.
 
 
+![](transcriptome.png)
+
+M. Geniza, P., 2017
+
+
 **K mers**
 
 ![](kmer.png)
 
+Sohn.*et. al*., 2018
+
 **Ensamblado**
 
 ![](ENSAMBLE.gif)
+
+Sohn.*et. al*., 2018
 
 
 **Ensamblado de novo de transcriptoma**
@@ -97,7 +104,7 @@ c) Ensamblado de *novo* mediante software como: velver, Oases, SPAdes, Trinity o
 **DBG: De Bruijn graph assembly**
 
 
-![](transcriptome.png)
+
 
 ## 4.Menciona al menos dos softwares principales que se utilicen para realizar la parte medular de los análisis bioinformáticos de este tipo de análisis (e.g. si es ensamblado de novo con qué se ensambla, no con qué se hace el pre-procesamiento) y cuáles son los pros y contras de cada uno. 
 Para el ensamblado de transcriptoma de novo sin genoma de referencia existe una diversidad amplia en software.
@@ -117,9 +124,11 @@ Todos los programas son poco sensibles con secuenciaciones de baja profundidad. 
 
 
 
-**Paqueteria de Triniti (2013)**
+**Paqueteria de Triniti (2011-2013)**
 
 ![](trimomatinc,Grabherr,2011.png)
+
+Grabherr., *et al*., 2011
 
 
 Ejemplo de triniti.
@@ -178,4 +187,5 @@ CD-HIT-EST
 
 
  http://www.nature.com.pbidi.unam.mx:8080/articles/nmeth.1517.pdf
+
  http://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC3571712&blobtype=pdf
